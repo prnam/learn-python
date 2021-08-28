@@ -8,7 +8,7 @@ def skip_elements(elements):
 	# Iterate through the list
 	for element in range (0,len(elements)):
 		# Does this element belong in the resulting list?
-		if i%2==0:
+		if element%2==0:
 			# Add this element to the resulting list
 			new_list.append(elements[i])
 		# Increment i
