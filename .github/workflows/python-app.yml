@@ -36,4 +36,4 @@ jobs:
         black source/
     - name: Test with pytest
       run: |
-        pytest
+        pytest -v
