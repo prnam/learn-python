@@ -15,8 +15,7 @@ def isPalindrome(number: int):
     reverse = 0
     borrow_number = number
     while borrow_number > 0:
-        digit = borrow_number % 10
-        reverse = reverse * 10 + digit
+        reverse = reverse * 10 + borrow_number % 10
         borrow_number = borrow_number // 10
 
     if number == reverse:
