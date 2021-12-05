@@ -12,7 +12,7 @@ def efficientJanitor(weight):
     return trips
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     weight_count = int(input().strip())
     weight = []
 

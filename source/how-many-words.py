@@ -2,7 +2,6 @@
 import re
 
 
-
 #
 # Complete the 'howMany' function below.
 #
@@ -10,21 +9,25 @@ import re
 # The function accepts STRING sentence as parameter.
 #
 def howMany(sentence):
-    strip = ''',.?!'''
+    strip = """,.?!"""
     _sentence = ""
     for word in sentence:
         if word not in strip:
             _sentence = _sentence + word
     list_of_words = _sentence.split(" ")
 
-    pattern = '^[a-zA-Z-]+'
-    list_of_words = [item for item in list_of_words if item != '' and re.fullmatch(pattern, item) and not item.isdigit()]
+    pattern = "^[a-zA-Z-]+"
+    list_of_words = [
+        item
+        for item in list_of_words
+        if item != "" and re.fullmatch(pattern, item) and not item.isdigit()
+    ]
 
     # print(list_of_words)
     return len(list_of_words)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sentence = input()
 
     result = howMany(sentence)
