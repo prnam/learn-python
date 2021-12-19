@@ -11,7 +11,7 @@ import re
 def check_web_address(text):
     pattern = r"^[www.]*[\w\s-]+\.+[\w]+$"
     result = re.search(pattern, text)
-    return result != None
+    return result is not None
 
 
 print(check_web_address("gmail.com"))  # True
