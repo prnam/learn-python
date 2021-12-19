@@ -11,7 +11,7 @@ import re
 def contains_acronym(text):
     pattern = r"\([\w]+\)"
     result = re.search(pattern, text)
-    return result != None
+    return result is not None
 
 
 print(
