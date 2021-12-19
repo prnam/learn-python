@@ -10,7 +10,7 @@ import re
 def check_time(text):
     pattern = r"([1-9]|1[0-2]+)\:+[00-59]+[ AM|PM|am|pm]+"
     result = re.search(pattern, text)
-    return result != None
+    return result is not None
 
 
 print(check_time("12:45pm"))  # True
