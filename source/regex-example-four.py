@@ -7,7 +7,7 @@ import re
 
 def check_zip_code(text):
     result = re.search(r"[ ]+[\d-]{4,5}", text)
-    return result != None
+    return result is not None
 
 
 print(check_zip_code("The zip codes for New York are 10001 thru 11104."))  # True
